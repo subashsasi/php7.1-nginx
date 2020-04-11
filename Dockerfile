@@ -1,4 +1,4 @@
-ROM ubuntu:18.04
+FROM ubuntu:18.04
 MAINTAINER subash.s@iinerds.com
 ENV DEBIAN_FRONTEND=noninteractive
 # Main package installation
