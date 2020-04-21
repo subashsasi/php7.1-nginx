@@ -17,7 +17,6 @@ COPY conf/supervisord.conf /etc/supervisor/
 COPY conf/php/php-fpm.conf /etc/php/7.1/fpm/
 COPY conf/php/php.ini /etc/php/7.1/fpm/
 COPY conf/php/www.conf /etc/php/7.1/fpm/pool.d/
-COPY index.php /var/www/html
 # Giving permission to datafolder and fpm log folder
 RUN mkdir -p /var/run/php /var/log/php7.1-fpm && \
     chown -R www-data:www-data /var/run/php /var/www/html /var/log/php7.1-fpm && \
